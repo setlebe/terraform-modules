@@ -6,7 +6,7 @@ locals {
 
 module "source" {
   count     = var.create_source ? 1 : 0
-  source    = "git@github.com:in4it/terraform-modules.git//modules/s3"
+  source    = "../s3"
   providers = {
     aws = aws.source
   }

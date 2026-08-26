@@ -1,5 +1,5 @@
 module "openvpn-access" {
-  source                    = "git@github.com:in4it/terraform-modules.git//modules/ecs-service"
+  source                    = "../ecs-service"
   vpc_id                    = var.vpc_id
   cluster_arn               = aws_ecs_cluster.cluster.id
   execution_role_arn        = aws_iam_role.ecs-task-execution-role.arn

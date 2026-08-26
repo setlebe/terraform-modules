@@ -1,5 +1,5 @@
 module "vpn-rds" {
-  source         = "github.com/in4it/terraform-modules//modules/rds"
+  source         = "../rds"
   name           = "vpn"
   storage        = "20"
   storage_type   = "gp2"
