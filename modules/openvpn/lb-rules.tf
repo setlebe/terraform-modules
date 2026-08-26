@@ -1,5 +1,5 @@
 module "alb-rule-openvpn-access" {
-  source       = "git@github.com:in4it/terraform-modules.git//modules/alb-rule"
+  source       = "../alb-rule"
   listener_arn = var.alb_https_listener_arn
 
   priority         = var.alb_route_priority

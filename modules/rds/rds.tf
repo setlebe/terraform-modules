@@ -73,7 +73,7 @@ resource "aws_db_parameter_group" "rds" {
 
 module "secret" {
   count  = var.create_secret ? 1 : 0
-  source = "git@github.com:in4it/terraform-modules.git//modules/rds/secret"
+  source = "./secret"
 
   name        = var.name
   description = "${var.name} credentials"

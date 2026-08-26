@@ -1,5 +1,5 @@
 module "destination" {
-  source    = "git@github.com:in4it/terraform-modules.git//modules/s3"
+  source    = "../s3"
   providers = {
     aws = aws.destination
   }
